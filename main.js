@@ -1,5 +1,5 @@
 async function main() {
-	console.log("Hello, World!")
+	console.log("edit 19")
 }
 
 main()

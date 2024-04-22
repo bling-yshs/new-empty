@@ -1,11 +1,13 @@
-name: test main
+name: test
+run-name: "🔍推送时触发: (${{ github.event.head_commit.message }})"
 
 on:
-  pull_request:
+  push:
+#  pull_request:
   workflow_dispatch:
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: clone from github
